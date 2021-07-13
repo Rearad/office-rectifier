@@ -1,0 +1,28 @@
+server:
+  port: 7720
+
+#开启定时任务的接口
+logging:
+  file:
+    path: target/logfiles
+  level:
+    root: INFO
+    org.springframework: debug
+    org.mybatis: debug
+    com.dengandyan.leave.*: debug
+
+
+
+open:
+  office:
+    connect:
+      ip: 119.91.111.207
+      port: 8100
+
+
+jodconverter:
+  enabled: true  #注意这个开关，今天部署时就遇到这个问题，排查好久才发现。
+  officeHome: C:\Program Files (x86)\OpenOffice 4
+  portNumbers: 8101,8102,8103,8104,8105
+  maxTasksPerProcess: 5
+

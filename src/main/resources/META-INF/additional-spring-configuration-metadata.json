@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "open.office.connect.ip",
+      "type": "java.lang.String",
+      "description": "Description for open.office.connect.ip."
+    },
+    {
+      "name": "open.office.connect.port",
+      "type": "java.lang.String",
+      "description": "Description for open.office.connect.port."
+    }
+  ] }

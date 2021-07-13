@@ -1,0 +1,26 @@
+jodconverter:
+  remote:
+    enabled: true
+    url: http://119.91.111.207:8100
+    connect-timeout: 8000
+    socket-timeout: 300000
+    pool-size: 1
+    task-execution-timeout: 600000
+    task-queue-timeout: 600000
+    ssl:
+      enabled: false
+      ciphers: TLS_RSA_WITH_AES_128_CBC_SHA
+      enabled-protocols: TLSv1.1, TLSv1.2
+      key-alias: clientkeypair
+      key-password: clientkeystore
+      key-store: classpath:clientkeystore.jks
+      key-store-password: clientkeystore
+      key-store-type: jks
+      key-store-provider: SUN
+      trust-store: classpath:clienttruststore.jks
+      trust-store-password: clienttruststore
+      trust-store-type: jks
+      trust-store-provider: SUN
+      protocol: TLS
+      trust-all: true
+      verify-hostname: false
